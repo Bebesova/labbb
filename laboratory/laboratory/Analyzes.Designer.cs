@@ -30,7 +30,6 @@
         {
             this.dGVService = new System.Windows.Forms.DataGridView();
             this.dGVorder = new System.Windows.Forms.DataGridView();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -38,6 +37,10 @@
             this.label5 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dGVService)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dGVorder)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -61,16 +64,6 @@
             this.dGVorder.Name = "dGVorder";
             this.dGVorder.Size = new System.Drawing.Size(292, 244);
             this.dGVorder.TabIndex = 1;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::laboratory.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(508, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(105, 77);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
             // 
             // button1
             // 
@@ -106,7 +99,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.25F);
-            this.label2.Location = new System.Drawing.Point(362, 42);
+            this.label2.Location = new System.Drawing.Point(355, 42);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(147, 26);
             this.label2.TabIndex = 6;
@@ -127,7 +120,7 @@
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(140)))), ((int)(((byte)(81)))));
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
             this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button2.Location = new System.Drawing.Point(160, 447);
+            this.button2.Location = new System.Drawing.Point(177, 447);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(125, 69);
             this.button2.TabIndex = 11;
@@ -143,12 +136,56 @@
             this.comboBox1.Size = new System.Drawing.Size(179, 28);
             this.comboBox1.TabIndex = 12;
             // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.textBox2.Location = new System.Drawing.Point(372, 142);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(241, 26);
+            this.textBox2.TabIndex = 13;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.label3.Location = new System.Drawing.Point(317, 148);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(49, 20);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "ФИО";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::laboratory.Properties.Resources.logo;
+            this.pictureBox1.Location = new System.Drawing.Point(508, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(105, 77);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(140)))), ((int)(((byte)(81)))));
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button3.Location = new System.Drawing.Point(321, 447);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(125, 69);
+            this.button3.TabIndex = 15;
+            this.button3.Text = "Выдать";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Analyzes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(227)))), ((int)(((byte)(131)))));
             this.ClientSize = new System.Drawing.Size(632, 528);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label5);
@@ -182,5 +219,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button3;
     }
 }

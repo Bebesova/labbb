@@ -50,5 +50,12 @@ namespace laboratory
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            sqlConnect.Open();
+            SqlCommand Nstatus = new SqlCommand();
+            Nstatus.CommandText = $"";
+        }
     }
 }
